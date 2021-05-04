@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.min.css">
+    <title>panda maketi</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <img class="header__logo" src="./img/icon-Logo-large.svg" width="108" height="84" alt="logo">
+            <nav class="site-nav">
+                <ul class="site-nav__list">
+                    <li class="site-nav__list-item"><a class="site-nav__link" href="#">ABOUT</a></li>
+                    <li class="site-nav__list-item"><a class="site-nav__link" href="#">MAP</a></li>
+                    <li class="site-nav__list-item"><a class="site-nav__link" href="#">ZOOS</a></li>
+                    <li class="site-nav__list-item"><button type="button" class="site-nav__link site-nav__link--contact"
+                            href="#">CONTACT
+                            US</button></li>
+                    <li class="site-nav__list-item"><a class="site-nav__link" href="#">DESIGN</a></li>
+                </ul>
+            </nav>
+            <div class="nav-header">
+                <div class="nav-header__search">
+                </div>
+                <button class="nav-header__button-search" type="button"></button>
+                <input class="nav-header__input-search" id="search" type="text" placeholder="search">
+                <label for="search"></label>
+                <span class="nav-header__clear" onclick="document.getElementById ('search').value = ''"></span>
+                <label class="nav-header__label" for="search"></label>
+                <button class="nav-header__button nav-header__button--close nav-header__button--1" type="button">LOG
+                    IN</button>
+                <button class="nav-header__button nav-header__button--2" type="button">SIGN UP</button>
+            </div>
+            <div class="modal">
+                <div class="modal__content">
+                    <form>
+                        <button class="modal__close" type="button"><img src="./img/icon-close.svg" width="30"
+                                height="30" alt=""></button>
+                        <h2 class="modal__title">Contact us</h2>
+                        <label class="modal__label" for="text">Name</label>
+                        <input class="modal__input modal__input--active" type="text" name="text" id="text">
+                        <label class="modal__label" for="email">Email</label>
+                        <input class="modal__input modal__input--active" type="email" name="email" id="email">
+                        <label class="modal__textarea-label" for="textarea">Your Message</label>
+                        <textarea class="modal__textarea" name="textarea" id="textarea" cols="30" rows="10"></textarea>
+                        <button class="modal__send" type="submit">SEND</button>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-login">
+                <div class="modal-login__content">
+                    <div class="modal-login__wrapper">
+                        <img class="modal-login__logo" src="./img/icon-Logo-large.svg" width="108" height="84"
+                            alt="logo">
+                    </div>
+                    <div class="modal-login__wrapp">
+                        <button class="modal-login__button" type="button">CREATE ACCOUNT</button>
+                        <button class="modal-login__button" type="button">LOG IN</button>
+                    </div>
+                    <div class="modal-login__comp">
+                        <button class="modal-login__google" type="">Google Sign in</button>
+                        <button class="modal-login__google modal-login__google--facebook" type="">Facebook Sign
+                            in</button>
+                    </div>
+                    <form class="modal-login__form">
+                        <button class="modal-login__close" type="button"><img src="./img/icons8-close-window-48.png"
+                                width="48" height="48" alt=""></button>
+                        <label class="modal__label" for="text">Name</label>
+                        <input class="modal__input modal__input--active modal__input--form" type="text" name="text" id="text">
+                        <label class="modal__label" for="email">Email</label>
+                        <input class="modal__input modal__input--active modal__input--form" type="email" name="email" id="email">
+                        <label class="modal__label" for="password">Password</label>
+                        <input class="modal__input modal__input--active modal__input--form" type="password" id="password">
+                        <div class="modal-login__contentt">
+                            <input type="checkbox" id="checkbox">
+                            <label class="modal-login__checkbox" for="checkbox">Agree with the User Agreement and
+                                Privacy
+                                Policy</label>
+                        </div>
+                        <button class="modal__send modal__send--1" type="submit">SEND</button>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-sign">
+                <div class="modal-sign__content">
+                    <div class="modal-sign__wrapper">
+                        <img class="modal-sign__logo" src="./img/icon-Logo-large.svg" width="108" height="84"
+                            alt="logo">
+                    </div>
+                    <div class="modal-sign__wrapp">
+                        <button class="modal-sign__button modal-sign__button--create" type="button">CREATE
+                            ACCOUNT</button>
+                        <button class="modal-sign__button modal-sign__button--login" type="button">LOG IN</button>
+                    </div>
+                    <div class="modal-sign__comp">
+                        <button class="modal-sign__google" type="">Google Sign in</button>
+                        <button class="modal-sign__google modal-sign__google--facebook" type="">Facebook Sign
+                            in</button>
+                    </div>
+                    <form class="modal-sign__form">
+                        <button class="modal-sign__close" type="button"><img src="./img/icons8-close-window-48.png"
+                                width="48" height="48" alt=""></button>
+                        <label class="modal__label" for="email">Email</label>
+                        <input class="modal__input modal__input--active modal__input--form" type="email" name="email" id="email">
+                        <label class="modal__label" for="password">Password</label>
+                        <input class="modal__input modal__input--active modal__input--form" type="password" id="password">
+                        <div class="modal-sign__contentt">
+                        </div>
+                        <button class="modal__send modal__send--1" type="submit">SEND</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="hero">
+            <div class="container hero__container">
+                <div class="hero__wrapper">
+                    <h1 class="hero__content">Watch your favorite <span class="hero__span">animals online</span></h1>
+                    <p class="hero__paragrif">Observe different animals from around the world online in live time. Help
+                        vulunteers to take a good care of animals, donate to your favorite ones.</p>
+                    <button type="button" class="hero__link" href="#">Watch now </button>
+                </div>
+                <picture>
+                    <source type="image/webp" media="max-width: 640px"
+                        srcset="img/Panda-intro-tob-mobil.webp 1x, img/Panda-intro-tob-mobil@2x.webp 2x">
+                    <source type="image/webp" media="max-width: 1448px"
+                        srcset="img/Panda-intro-des.webp 1x, img/Panda-intro-des@2x.webp 2x">
+                    <img class="hero__panda" src="./img/Panda.png" srcset="img/Panda.png 1x, img/Panda@2x.png 2x"
+                        alt="">
+                </picture>
+            </div>
+        </div>
+        <div class="benefits">
+            <div class="container">
+                <h2 class="benefits__title">How it works </h2>
+                <div class="benefits__content">
+                    <ul class="benefits__list">
+                        <li class="benefits__item">
+                            <p class="benefits__text">Keep an eye on your favourite animals online</p>
+                        </li>
+                        <li class="benefits__item">
+                            <p class="benefits__text">Become a part of the communtity</p>
+                        </li>
+                        <li class="benefits__item">
+                            <p class="benefits__text">KeeSupport animals with the donations</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="landscape"></div>
+
+        <section>
+            <div class="container content">
+                <div class="content__flex">
+                    <h2 class="content__title">Pets in zoo</h2>
+                    <a class="content__link" href="#">Choose your Favorite</a>
+                </div>
+                <ul class="content__list">
+                    <li class="content__item">
+                        <a href="#" class="content__links">
+                            <picture>
+                                <source type="image/webp" media="max-width: 1448px"
+                                    srcset="img/1.webp 1x, img/1@2x.webp 2x">
+                                <img class="content__pic" src="./img/1.png" srcset="img/1.png 1x, img/1@2x.png 2x"
+                                    alt="">
+                            </picture>
+                            <div class="content__wrap">
+                                <h3 class="content__list-title">Pandas</h3>
+                                <p class="content__paragrif">Shenshuping Gengda Panda Center</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="content__item">
+                        <a href="#" class="content__links">
+                            <picture>
+                                <source type="image/webp" media="max-width: 1448px"
+                                    srcset="img/2.webp 1x, img/2@2x.webp 2x">
+                                <img class="content__pic" src="./img/2.png" srcset="img/2.png 1x, img/2@2x.png 2x"
+                                    alt="">
+                            </picture>
+                            <div class="content__wrap">
+                                <h3 class="content__list-title">Eagles</h3>
+                                <p class="content__paragrif">Catalina Island</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="content__item">
+                        <a href="#" class="content__links">
+                            <picture>
+                                <source type="image/webp" media="max-width: 1448px"
+                                    srcset="img/3.webp 1x, img/3@2x.webp 2x">
+                                <img class="content__pic" src="./img/3.png" srcset="img/3.png 1x, img/3@2x.png 2x"
+                                    alt="">
+                            </picture>
+                            <div class="content__wrap">
+                                <h3 class="content__list-title">Gorillas</h3>
+                                <p class="content__paragrif">GRACE gorillas</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="content__item">
+                        <a href="#" class="content__links">
+                            <picture>
+                                <source type="image/webp" media="max-width: 1448px"
+                                    srcset="img/4.webp 1x, img/4@2x.webp 2x">
+                                <img class="content__pic" src="./img/4.png" srcset="img/4.png 1x, img/4@2x.png 2x"
+                                    alt="">
+                            </picture>
+                            <div class="content__wrap">
+                                <h3 class="content__list-title">Aligators</h3>
+                                <p class="content__paragrif">St. Augustine's Alligator Farm Zoological Park</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="content__item">
+                        <a href="#" class="content__links">
+                            <picture>
+                                <source type="image/webp" media="max-width: 1448px"
+                                    srcset="img/5.webp 1x, img/5@2x.webp 2x">
+                                <img class="content__pic" src="./img/5.png" srcset="img/5.png 1x, img/5@2x.png 2x"
+                                    alt="">
+                            </picture>
+                            <div class="content__wrap">
+                                <h3 class="content__list-title">Elephants</h3>
+                                <p class="content__paragrif">Tembe Elephant Park</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="content__item">
+                        <a href="#" class="content__links">
+                            <picture>
+                                <source type="image/webp" media="max-width: 1448px"
+                                    srcset="img/6.webp 1x, img/6 @2x.webp 2x">
+                                <img class="content__pic" src="./img/6.png" srcset="img/6.png 1x, img/6@2x.png 2x"
+                                    alt="">
+                            </picture>
+                            <div class="content__wrap">
+                                <h3 class="content__list-title">Lemurs</h3>
+                                <p class="content__paragrif">Madagascar</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div class="page">
+                <div class="container">
+                    <div class="page__wrap">
+                        <h2 class="page__title">Pay and feed</h2>
+                        <button class="page__button" type="button">Donate to volunteers</button>
+                    </div>
+                    <ul class="page__list">
+                        <li class="page__item page__item--white page__item--1">
+                            <h3>You donate to your favourite animals</h3>
+                        </li>
+                        <li class="page__item page__item--2">
+                            <h3>Zoo Keepers feed animals with their favourite food</h3>
+                        </li>
+                        <li class="page__item page__item--3">
+                            <h3>Animals are healthy and happy</h3>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="section">
+                <div class="container">
+                    <div class="section__flex">
+                        <h2 class="section__title">Testimonials</h2>
+                        <button class="section__button" type="button">Leave feedback</button>
+                    </div>
+                    <ul class="section__list">
+                        <li class="section__item">
+                            <div class="section__wrapp">
+                                <time class="section__time">20 Decepmer 2020</time>
+                               <blockquote class="section__blockquote">
+                                <i>Awesome place to observe my favourite aligators at Florida, the quality of the video is great.</i> 
+                               </blockquote>
+                            </div>
+                            <figure class="section__figure">
+                                <img src="./img/11.png" alt="">
+                                <figcaption class="section__adam"><i>Adam, Spain</i></figcaption>
+                            </figure>
+                        </li>
+                        <li class="section__item">
+                            <div class="section__wrapp">
+                                <time class="section__time">20 Decepmer 2020</time>
+                               <blockquote class="section__blockquote">
+                                <i>Awesome place to observe my favourite aligators at Florida, the quality of the video is great.</i> 
+                               </blockquote>
+                            </div>
+                            <figure class="section__figure">
+                                <img src="./img/22.png" alt="">
+                                <figcaption class="section__adam"><i>Adam, Spain</i></figcaption>
+                            </figure>
+                        </li>
+                        <li class="section__item">
+                            <div class="section__wrapp">
+                                <time class="section__time">20 Decepmer 2020</time>
+                               <blockquote class="section__blockquote">
+                                <i>Awesome place to observe my favourite aligators at Florida, the quality of the video is great.</i> 
+                               </blockquote>
+                            </div>
+                            <figure class="section__figure">
+                                <img src="./img/33.png" alt="">
+                                <figcaption class="section__adam"><i>Adam, Spain</i></figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

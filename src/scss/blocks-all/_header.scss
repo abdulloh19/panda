@@ -1,0 +1,19 @@
+.header
+{
+    background-color: #2A8086;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 5;
+    position: relative;
+    box-shadow: 0px 1px 10px 0px #12575B40;
+}
+.header__container
+{
+    display: flex;
+    align-items: center;
+}
+.header__logo
+{
+    cursor: pointer;
+}

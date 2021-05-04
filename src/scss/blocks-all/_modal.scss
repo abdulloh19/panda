@@ -1,0 +1,119 @@
+.modal {
+    position: sticky;
+    z-index: 0;
+    width: 568px;
+    top: 84px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: rgba(#ccc, 1);
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #0D444D;
+    font-weight: 400;
+    display: none;
+    position: relative;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.modal--active {
+    display: block;
+    position: absolute;
+    border-radius: 20px
+}
+
+.modal__title
+{
+    @include rubik;
+    font-size: 24px;
+    line-height: 28px;
+}
+.modal__content {
+    width: 568px;
+    margin-left: 60%;
+    transform: translate(-50%);
+    position: relative;
+}
+.modal__label {
+    display: block;
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    margin-bottom: 8px;
+    color: #0D444D;
+}
+.modal__input
+{
+    width: 448px;
+    height: 54px;
+    box-shadow: 0px 15px 21px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: none;
+    display: block;
+    padding-left: 10px;
+
+
+    &:hover {
+        box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.4);
+    }
+    &:active {
+        box-shadow: 1.5px 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.4);
+    }
+
+    &:focus
+    {
+        outline: none;
+    }
+}
+.modal__input--active {
+    box-shadow: 1.5px 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.4);
+}
+.modal__textarea {
+    display: block;
+    width: 448px;
+    border-radius: 10px;
+    box-shadow: 0px 15px 21px rgba(0, 0, 0, 0.1);
+    border: none;
+    font-size: 25px;
+
+    &:focus {
+        outline: none;
+    }
+}
+.modal__textarea-label {
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 20px;
+}
+.modal__send
+{
+    @include roboto;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 10%;
+    font-weight: 400;
+    color: #C5E1E5;
+    background-color: #2A8088;
+    padding: 15px 200px;
+    text-align: center;
+    border-radius: 100px;
+    border: none;
+    margin-top: 32px;
+    margin-bottom: 42px;
+    cursor: pointer;
+
+
+    &:focus {
+        outline: none;
+    }
+}
+.modal__close {
+    border: none;
+    background: none;
+    cursor: pointer;
+    position: absolute;
+    right: 108px;
+}

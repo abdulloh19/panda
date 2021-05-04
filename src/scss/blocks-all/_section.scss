@@ -1,0 +1,84 @@
+.section__flex {
+    display: flex;
+    justify-content: space-between;
+}
+.section__title {
+    color: #0D444D;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 400;
+    @include rubik;
+    text-transform: uppercase;
+}
+.section__button {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 10%;
+    color: #19707D;
+    font-weight: 400;
+    @include roboto;
+    text-transform: uppercase;
+    position: relative;
+    padding: 14px 20px 14px 60px;
+    border-radius: 60px;
+    border: 1px solid #19707D;
+    background: 0;
+    cursor: pointer;
+    overflow: hidden;
+
+    &:hover {
+        transition: 0.4s;
+        transform: scale(1.03);
+        overflow: hidden;
+        transform: rotateX(180deg);
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        background: url("../../img/icon-sms.svg") no-repeat center center;
+        width: 24px;
+        height: 24px;
+        top: 37%;
+        left: 20px;
+    }
+}
+.section__list {
+    display: flex;
+}
+.section__blockquote {
+    width: 390px;
+    color: #2D2D2D;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    margin-left: 0px;
+    margin: 0;
+}
+.section__time {
+    color: #B2B2B2;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+}
+.section__wrapp {
+    padding: 28px 45px 77px 45px;
+    padding-top: 28px;
+    background: #fff;
+    width: 480px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 30px 0px #0000000F;
+    margin-top: 64px;
+    margin-left: 10px;
+}
+.section__figure {
+    display: flex;
+    align-items: center;
+}
+.section__adam {
+    font-size: 16px;
+    line-height: 18px;
+    color: #000;
+    text-align: center;
+    margin-left: 16px;
+}

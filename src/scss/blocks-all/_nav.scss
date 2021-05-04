@@ -1,0 +1,27 @@
+.site-nav__list
+{
+    @include none;
+    display: flex;
+    flex-grow: 1;
+}
+.site-nav__list-item
+{
+    padding-left: 52px;
+    font-size: 18px;
+    line-height: 23.7px;
+    font-weight: 500;
+    flex-grow: 1;
+}
+.site-nav__link
+{
+    color: #C5E1E5;
+}
+.site-nav__link--contact {
+    border: none;
+    background: none;
+    font-size: 18px;
+    cursor: pointer;
+    line-height: 23.7px;
+    font-weight: 500;
+    flex-grow: 1;
+}
